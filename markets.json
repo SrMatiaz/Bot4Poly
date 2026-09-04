@@ -1,0 +1,20 @@
+[
+  {
+    "event_slug": "brazil-presidential-election",
+    "market_slug": "will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election",
+    "label": "Lula vence a eleição",
+    "threshold_pct": 1.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-2nd-place",
+    "market_slug": "will-flvio-bolsonaro-finish-in-second-place-in-the-first-round-of-the-2026-brazilian-presidential-election",
+    "label": "Flávio Bolsonaro em 2º lugar",
+    "threshold_pct": 1.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-3rd-place",
+    "market_slug": "will-renan-santos-finish-in-third-place-in-the-first-round-of-the-2026-brazilian-presidential-election",
+    "label": "Renan Santos em 3º lugar",
+    "threshold_pct": 1.0
+  }
+]
