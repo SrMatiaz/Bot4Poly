@@ -75,29 +75,29 @@ def main():
             print(f"Mercado nao encontrado: {label}")
             continue
 
-        current = info["price_yes"]
+        current = round(info["price_yes"] * 100)  # inteiro, ex: 54, 55, 56
         last = state.get(key)
 
         if last is None:
             # primeira execucao para esse mercado: so guarda o preco base, sem alerta
             state[key] = current
             changed = True
-            print(f"{label}: preco inicial registrado em {current*100:.1f}%")
+            print(f"{label}: preco inicial registrado em {current}%")
             continue
 
-        diff_pct = abs(current - last) * 100  # em pontos percentuais
+        diff_pct = abs(current - last)  # ja em pontos inteiros
         if diff_pct >= threshold:
             direction = "subiu" if current > last else "caiu"
             send_telegram(
                 f"⚠️ {label}\n"
-                f"{direction} de {last*100:.1f}% para {current*100:.1f}% "
-                f"(variação de {diff_pct:.1f} pontos)"
+                f"{direction} de {last}% para {current}% "
+                f"(variação de {diff_pct} pontos)"
             )
             state[key] = current
             changed = True
-            print(f"{label}: ALERTA disparado ({last*100:.1f}% -> {current*100:.1f}%)")
+            print(f"{label}: ALERTA disparado ({last}% -> {current}%)")
         else:
-            print(f"{label}: {current*100:.1f}% (sem variação relevante)")
+            print(f"{label}: {current}% (sem variação relevante)")
 
     if changed:
         with open(STATE_FILE, "w") as f:
