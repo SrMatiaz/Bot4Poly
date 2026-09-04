@@ -9,11 +9,20 @@ DEFAULT_THRESHOLD_PCT = 1.0  # pontos percentuais de variação para disparar al
 TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
+}
+
 
 def fetch_market(event_slug, market_slug):
     """Busca o evento na API publica (Gamma) e acha o mercado (candidato) pelo slug dele."""
     url = f"https://gamma-api.polymarket.com/events?slug={event_slug}"
-    with urllib.request.urlopen(url, timeout=15) as r:
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=15) as r:
         data = json.load(r)
     if not data:
         return None
