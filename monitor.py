@@ -4,7 +4,7 @@ import urllib.request
 
 STATE_FILE = "state.json"
 CONFIG_FILE = "markets.json"
-DEFAULT_THRESHOLD_PCT = 2.0  # pontos percentuais de variação para disparar alerta
+DEFAULT_THRESHOLD_PCT = 3.0  # pontos percentuais de variação para disparar alerta
 
 TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
