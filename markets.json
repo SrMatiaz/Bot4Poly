@@ -13,8 +13,26 @@
   },
   {
     "event_slug": "brazil-presidential-election-first-round-3rd-place",
+    "market_slug": "will-augusto-cury-finish-in-third-place-in-the-first-round-of-the-2026-brazilian-presidential-election",
+    "label": "Augusto Cury em 3º lugar",
+    "threshold_pct": 1.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-3rd-place",
     "market_slug": "will-renan-santos-finish-in-third-place-in-the-first-round-of-the-2026-brazilian-presidential-election",
     "label": "Renan Santos em 3º lugar",
+    "threshold_pct": 1.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-winner",
+    "market_slug": "will-lula-win-the-first-round-of-the-2026-brazilian-presidential-election",
+    "label": "Lula vence o 1º turno",
+    "threshold_pct": 1.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-winner",
+    "market_slug": "will-flvio-bolsonaro-win-the-first-round-of-the-2026-brazilian-presidential-election",
+    "label": "Flávio Bolsonaro vence o 1º turno",
     "threshold_pct": 1.0
   }
 ]
