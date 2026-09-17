@@ -28,5 +28,17 @@
     "market_slug": "will-renan-santos-finish-in-third-place-in-the-first-round-of-the-2026-brazilian-presidential-election",
     "label": "Renan Santos em 3º lugar",
     "threshold_pct": 2.0
-  }
+  },
+ {
+  "event_slug": "brazil-presidential-election-first-round-margin-of-victory",
+  "market_slug": "brazil-presidential-election-first-round-margin-of-victory-lula-under-5",
+  "label": "Lula da Silva vence a margem por menos de 5%",
+  "threshold_pct": 2.0
+},
+  {
+  "event_slug": "brazil-presidential-election-first-round-margin-of-victory",
+  "market_slug": "brazil-presidential-election-first-round-margin-of-victory-flavio-bolsonaro-under-5",
+  "label": "Flávio Bolsonaro vence a margem por menos de 5%",
+  "threshold_pct": 2.0
+ }
 ]
