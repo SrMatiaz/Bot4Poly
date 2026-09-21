@@ -1,6 +1,8 @@
-  {
+[
+{
     "event_slug": "will-any-presidential-candidate-win-outright-in-the-first-round-of-the-brazil-election",
     "market_slug": "will-any-presidential-candidate-win-outright-in-the-first-round-of-the-brazil-election",
     "label": "Alguém vence no 1º turno",
     "threshold_pct": 2.0
   }
+  ]
