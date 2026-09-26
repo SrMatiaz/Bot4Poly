@@ -1,14 +1,26 @@
 [
-{
+  {
     "event_slug": "will-any-presidential-candidate-win-outright-in-the-first-round-of-the-brazil-election",
     "market_slug": "will-any-presidential-candidate-win-outright-in-the-first-round-of-the-brazil-election",
     "label": "Alguém vence no 1º turno",
     "threshold_pct": 2.0
   },
-    {
+  {
     "event_slug": "brazil-presidential-election-first-round-margin-of-victory",
     "market_slug": "will-flvio-bolsonaro-win-the-first-round-of-the-2026-brazilian-presidential-election-by-510",
     "label": "Flavio 5-10%",
     "threshold_pct": 2.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-margin-of-victory",
+    "market_slug": "will-lula-win-the-first-round-of-the-2026-brazilian-presidential-election-by-less-than-5",
+    "label": "Lula <5%",
+    "threshold_pct": 2.0
+  },
+  {
+    "event_slug": "brazil-presidential-election-first-round-2nd-place",
+    "market_slug": "will-flavio-bolsonaro-finish-in-second-place-in-the-2026-brazilian-presidential-election",
+    "label": "Flavio em 2º",
+    "threshold_pct": 2.0
   }
-  ]
+]
